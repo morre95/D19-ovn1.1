@@ -2,7 +2,7 @@
 
 ##ToDo list
 - Öppna weblänkar
-# kan vi har lite mer förklaring?
+# kan vi har lite mer förklaring om koden?
 
 - Dessa komandon ska implementeras
 * load  - load all links from a file
