@@ -6,6 +6,7 @@
 
 Dessa komandon ska implementeras
 * load  - load all links from a file
+{class ?}
 * open  - open a specific link
 * save  - Save links to file
 * quit  - quit the program
