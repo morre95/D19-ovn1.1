@@ -12,7 +12,7 @@ namespace D19_ovn1._1
         static void Main(string[] args)
         {
             PrintWelcome();
-            load.TestMe();
+            //load.TestMe();
             string command;
             do
             {
