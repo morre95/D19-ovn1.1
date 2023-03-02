@@ -11,7 +11,9 @@ namespace D19_ovn1._1
 
         static void Main(string[] args)
         {
+            AddFunction.addFunction();
             PrintWelcome();
+            Console.WriteLine(Open());
             string command;
             do
             {
@@ -25,9 +27,14 @@ namespace D19_ovn1._1
                 {
                     WriteTheHelp();
                 }
+
                 else if (command == "load")
                 {
                     NotYetImplemented(command);
+                }
+                else if (command == "list")
+                {
+                    list.All();
                 }
                 else if (command == "open")
                 {
@@ -47,7 +54,18 @@ namespace D19_ovn1._1
 
 
 
+<<<<<<< HEAD
+                
+
+            }
+            return ret;
+
+        }
+
+        private static string GetLink(string search)
+=======
         private static void GetLink()
+>>>>>>> 173e32ee88cd6881e3b4873944a51dc5863a3317
         {
             string ret = null;
             string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
