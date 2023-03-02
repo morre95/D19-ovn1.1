@@ -30,7 +30,7 @@ namespace D19_ovn1._1
 
                 else if (command == "load")
                 {
-                    NotYetImplemented(command);
+                    load.All();
                 }
                 else if (command == "list")
                 {
