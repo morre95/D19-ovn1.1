@@ -5,11 +5,14 @@ namespace D19_ovn1._1
 {
 	public static class list
 	{
-		public static void Class1()
+		public static void All()
 		{
-			//
-			// TODO: Add constructor logic here
-			//
-		}
+            string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");
+			foreach (string line in lines)
+			{
+                string[] parts = line.Split("|");
+				Console.WriteLine($"{parts[0]} {parts[1]} {parts[2]}");			
+			}
+        }
 	}
 }

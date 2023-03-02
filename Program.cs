@@ -32,7 +32,7 @@ namespace D19_ovn1._1
                 }
                 else if (command == "list")
                 {
-                    NotYetImplemented(command);
+                    list.All();
                 }
                 else if (command == "open")
                 {
