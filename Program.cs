@@ -67,20 +67,20 @@ namespace D19_ovn1._1
 
         }
 
-        private static void GetLink()
+        private static string GetLink(string search)
         {
             string ret = null;
             string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
             foreach (string line in lines)
             {
                 string[] test = line.Split("|");
-
-
-                Console.WriteLine(test[0]);
-                Console.WriteLine(test[1]);
-                Console.WriteLine(test[2]);
-
+                if (test[0] == search)
+                {
+                    ret = test[2];
+                    break;
+                }
             }
+            return ret;
         }
 
         private static void PrintWelcome()
