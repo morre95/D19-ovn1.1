@@ -1,6 +1,7 @@
 ﻿
 using System.IO;
 using System.IO.Enumeration;
+using System.Xml.Linq;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace D19_ovn1._1
@@ -25,7 +26,10 @@ namespace D19_ovn1._1
                 {
                     WriteTheHelp();
                 }
-
+                else if (command == "add")
+                {
+                    AddFunction.addFunction();
+                }
                 else if (command == "load")
                 {
                     load.All();
