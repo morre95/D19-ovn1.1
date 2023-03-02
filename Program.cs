@@ -52,35 +52,6 @@ namespace D19_ovn1._1
             Console.WriteLine($"Sorry: '{command}' is not yet implemented");
         }
 
-
-
-<<<<<<< HEAD
-                
-
-            }
-            return ret;
-
-        }
-
-        private static string GetLink(string search)
-=======
-        private static void GetLink()
->>>>>>> 173e32ee88cd6881e3b4873944a51dc5863a3317
-        {
-            string ret = null;
-            string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
-            foreach (string line in lines)
-            {
-                string[] test = line.Split("|");
-
-
-                Console.WriteLine(test[0]);
-                Console.WriteLine(test[1]);
-                Console.WriteLine(test[2]);
-
-            }
-        }
-
         private static void PrintWelcome()
         {
             Console.WriteLine("Hello and welcome to the ... program ...");
