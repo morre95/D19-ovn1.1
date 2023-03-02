@@ -12,7 +12,6 @@ namespace D19_ovn1._1
         static void Main(string[] args)
         {
             PrintWelcome();
-            Console.WriteLine(Open());
             string command;
             do
             {
@@ -34,10 +33,6 @@ namespace D19_ovn1._1
                 {
                     NotYetImplemented(command);
                 }
-                else if (command == "save")
-                {
-                    NotYetImplemented(command);
-                }
                 else
                 {
                     Console.WriteLine($"Unknown command '{command}'");
@@ -52,31 +47,20 @@ namespace D19_ovn1._1
 
 
 
-<<<<<<< HEAD
-                
-
-            }
-            return ret;
-
-        }
-
-        private static string GetLink(string search)
-=======
         private static void GetLink()
->>>>>>> 173e32ee88cd6881e3b4873944a51dc5863a3317
         {
             string ret = null;
             string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
             foreach (string line in lines)
             {
                 string[] test = line.Split("|");
-                if (test[0] == search)
-                {
-                    ret = test[2];
-                    break;
-                }
+
+
+                Console.WriteLine(test[0]);
+                Console.WriteLine(test[1]);
+                Console.WriteLine(test[2]);
+
             }
-            return ret;
         }
 
         private static void PrintWelcome()
@@ -84,6 +68,7 @@ namespace D19_ovn1._1
             Console.WriteLine("Hello and welcome to the ... program ...");
             Console.WriteLine("that does ... something.");
             Console.WriteLine("Write 'help' for help!");
+            
         }
 
         private static void WriteTheHelp()
