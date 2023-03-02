@@ -11,13 +11,8 @@ namespace D19_ovn1._1
 
         static void Main(string[] args)
         {
-            if (!File.Exists(fileName))
-            {
-                //File.WriteAllText(fileName);
-            }
-
-            Console.WriteLine(GetLink("Google"));
             PrintWelcome();
+            Console.WriteLine(Open());
             string command;
             do
             {
@@ -51,26 +46,41 @@ namespace D19_ovn1._1
             Console.WriteLine($"Sorry: '{command}' is not yet implemented");
         }
 
-        private static void Open(string search)
-        {
-
-        }
-
-        private static string GetLink(string check)
+        private static string Open(string search = "SVT")
         {
             string ret = null;
-            string[] lines = File.ReadAllLines("linkList.list");   
+            string[] lines = File.ReadAllLines(@"C:\Users\Salim\source\repos\D19-ovn1.1\linkLinst.list");
             foreach (string line in lines)
             {
                 string[] test = line.Split("|");
-                if (test[0] == check)
+                if (test[0] == search)
                 {
                     ret = test[2];
                     break;
                 }
+
+
                 
+
             }
             return ret;
+
+        }
+
+        private static void GetLink()
+        {
+            string ret = null;
+            string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
+            foreach (string line in lines)
+            {
+                string[] test = line.Split("|");
+
+
+                Console.WriteLine(test[0]);
+                Console.WriteLine(test[1]);
+                Console.WriteLine(test[2]);
+
+            }
         }
 
         private static void PrintWelcome()
