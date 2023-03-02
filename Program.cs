@@ -7,9 +7,7 @@ namespace D19_ovn1._1
     {
         static void Main(string[] args)
         {
-            string currDir = Directory.GetCurrentDirectory();
-            Console.WriteLine($@"{currDir}\linkLinst.list");
-            Console.WriteLine(GetLink("google"));
+            Console.WriteLine(GetLink("Google"));
             PrintWelcome();
             string command;
             do
@@ -52,8 +50,7 @@ namespace D19_ovn1._1
         private static string GetLink(string check)
         {
             string ret = null;
-            //string currDir = Directory.GetCurrentDirectory();
-            string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\bin\Debug\net6.0\linkLinst.list");   
+            string[] lines = File.ReadAllLines("linkList.list");   
             foreach (string line in lines)
             {
                 string[] test = line.Split("|");
