@@ -11,9 +11,7 @@ namespace D19_ovn1._1
 
         static void Main(string[] args)
         {
-            AddFunction.addFunction();
             PrintWelcome();
-            Console.WriteLine(Open());
             string command;
             do
             {
