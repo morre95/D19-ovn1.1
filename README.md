@@ -1,7 +1,7 @@
 # D19-ovn1.1
 
-##ToDo list
-- Öppna weblänkar
+## ToDo list
+Öppna weblänkar
 # kan vi har lite mer förklaring om koden?
 
 Dessa komandon ska implementeras
@@ -11,5 +11,7 @@ Dessa komandon ska implementeras
 * save  - Save links to file
 * quit  - quit the program
 
-- Möjlighet att spara weblänkar i från programmet
+Jag testar att ändra liet
+
+Möjlighet att spara weblänkar i från programmet
 
