@@ -1,9 +1,11 @@
-﻿namespace D19_ovn1._1
+﻿
+namespace D19_ovn1._1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(GetLink("google"));
             PrintWelcome();
             string command;
             do
@@ -36,6 +38,27 @@
         private static void NotYetImplemented(string command)
         {
             Console.WriteLine($"Sorry: '{command}' is not yet implemented");
+        }
+
+        private static void Open(string search)
+        {
+
+        }
+
+        private static string GetLink(string check)
+        {
+            string ret = null;
+            string[] liens = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
+            foreach (string lien in liens)
+            {
+                string[] test = lien.Split("|");
+                if (test[0] == check)
+                {
+                    ret = test[2];
+                }
+                
+            }
+            return ret;
         }
 
         private static void PrintWelcome()
