@@ -1,12 +1,21 @@
 ﻿
+using System.IO;
+using System.IO.Enumeration;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace D19_ovn1._1
 {
     internal class Program
     {
+        private static string fileName = "linkList.list";
+
         static void Main(string[] args)
         {
+            if (!File.Exists(fileName))
+            {
+                //File.WriteAllText(fileName);
+            }
+
             Console.WriteLine(GetLink("Google"));
             PrintWelcome();
             string command;
@@ -57,6 +66,7 @@ namespace D19_ovn1._1
                 if (test[0] == check)
                 {
                     ret = test[2];
+                    break;
                 }
                 
             }
