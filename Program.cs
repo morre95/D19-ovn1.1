@@ -1,10 +1,14 @@
 ﻿
+using static System.Net.Mime.MediaTypeNames;
+
 namespace D19_ovn1._1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
+            string currDir = Directory.GetCurrentDirectory();
+            Console.WriteLine($@"{currDir}\linkLinst.list");
             Console.WriteLine(GetLink("google"));
             PrintWelcome();
             string command;
@@ -48,7 +52,8 @@ namespace D19_ovn1._1
         private static string GetLink(string check)
         {
             string ret = null;
-            string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
+            //string currDir = Directory.GetCurrentDirectory();
+            string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\bin\Debug\net6.0\linkLinst.list");   
             foreach (string line in lines)
             {
                 string[] test = line.Split("|");
