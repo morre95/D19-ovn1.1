@@ -48,10 +48,10 @@ namespace D19_ovn1._1
         private static string GetLink(string check)
         {
             string ret = null;
-            string[] liens = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
-            foreach (string lien in liens)
+            string[] lines = File.ReadAllLines(@"C:\Users\Erik\source\repos\D19-ovn1.1\linkLinst.list");   
+            foreach (string line in lines)
             {
-                string[] test = lien.Split("|");
+                string[] test = line.Split("|");
                 if (test[0] == check)
                 {
                     ret = test[2];
