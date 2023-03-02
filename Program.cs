@@ -12,7 +12,7 @@ namespace D19_ovn1._1
         static void Main(string[] args)
         {
             PrintWelcome();
-            Console.WriteLine(Open());
+            load.TestMe();
             string command;
             do
             {
@@ -27,6 +27,10 @@ namespace D19_ovn1._1
                     WriteTheHelp();
                 }
                 else if (command == "load")
+                {
+                    NotYetImplemented(command);
+                }
+                else if (command == "list")
                 {
                     NotYetImplemented(command);
                 }
