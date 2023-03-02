@@ -34,6 +34,10 @@ namespace D19_ovn1._1
                 {
                     NotYetImplemented(command);
                 }
+                else if (command == "save")
+                {
+                    NotYetImplemented(command);
+                }
                 else
                 {
                     Console.WriteLine($"Unknown command '{command}'");
