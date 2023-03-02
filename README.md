@@ -6,8 +6,9 @@
 
 Dessa komandon ska implementeras
 * load  - load all links from a file
-{class }
+{class [array]}
 * open  - open a specific link
+
 * save  - Save links to file
 * quit  - quit the program
 
