@@ -28,5 +28,13 @@ namespace D19_ovn1._1
             }
             return null;
         }
+        public static void SelectFile()
+        {
+            Console.Write("Ange ett nytt filnamn: ");
+            string newPath = Console.ReadLine();
+            using (StreamWriter w = File.AppendText(newPath)) { }
+            _path = newPath;
+        }
+
     }
 }

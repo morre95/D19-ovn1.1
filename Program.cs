@@ -43,6 +43,11 @@ namespace D19_ovn1._1
                 {
                     save.Me();
                 }
+                else if (command == "select file")
+                {
+                    FileHelper.SelectFile();
+                    //load.All();
+                }
                 else
                 {
                     Console.WriteLine($"Unknown command '{command}'");
@@ -70,6 +75,8 @@ namespace D19_ovn1._1
                 "load  - load all links from a file",
                 "open  - open a specific link",
                 "save  - save links",
+                "list  - list all links",
+                "select file  - select or create new file",
                 "quit  - quit the program"
             };
             foreach (string h in hstr) Console.WriteLine(h);
