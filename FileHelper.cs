@@ -21,7 +21,7 @@ namespace D19_ovn1._1
             foreach(string line in GetAll())
             {
                 string[] parts = line.Split("|");
-                if (parts[0] == search)
+                if (parts[0].ToLower() == search.ToLower())
                 {
                     return parts;
                 }
