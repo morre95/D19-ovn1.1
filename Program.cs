@@ -8,10 +8,11 @@ namespace D19_ovn1._1
 {
     internal class Program
     {
-        private static string fileName = "linkList.list";
+        
 
         static void Main(string[] args)
         {
+            using (StreamWriter w = File.AppendText("linkList.list")) { }
             PrintWelcome();
             string command;
             do

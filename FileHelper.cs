@@ -10,10 +10,6 @@ namespace D19_ovn1._1
         public static void Set(string contextArr)
         {
             File.AppendAllText(_path, contextArr);
-            /*using(StreamWriter sw = new StreamWriter(_path, append: true))
-            {
-                sw.WriteLine(string.Join("|", contextArr) + "\n");
-            }*/
         }
         public static string[] GetAll()
         {
