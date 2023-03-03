@@ -11,7 +11,7 @@ namespace D19_ovn1._1
             foreach (string line in lines)
             {
                 string[] parts = line.Split("|");
-                Console.WriteLine($"{parts[0]} {parts[1]}");
+                Console.WriteLine($"\t{parts[0]}\n{parts[1]}");
             }
         }
 	}
