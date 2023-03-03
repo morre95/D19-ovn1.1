@@ -68,6 +68,7 @@ namespace D19_ovn1._1
                 "help  - display this help",
                 "load  - load all links from a file",
                 "open  - open a specific link",
+                "save  - save links",
                 "quit  - quit the program"
             };
             foreach (string h in hstr) Console.WriteLine(h);
