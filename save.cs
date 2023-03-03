@@ -15,11 +15,16 @@ namespace D19_ovn1._1
         {
             string[] output = StartZenity(str);
 
-            FileHelper.Set(output[0]);
+            string[] option = output[0].Split("|");
 
-            //string[] option = output[0].Split("|");
-            //Console.WriteLine($"Name = {option[0]}, \nDescription = {option[1]}, \nUrl = {option[2]}");
-            //FileHelper.Set(option);
+            while (!UrlHelper.IsValidUrl(option[2]))
+            {
+                Console.WriteLine($"Nej jag är inte en URL111: {option[2]}");
+                output = StartZenity(str);
+                option = output[0].Split("|");
+            }
+
+            FileHelper.Set(output[0]);
         }
 
         static string[] StartZenity(string zenityString)
