@@ -26,10 +26,6 @@ namespace D19_ovn1._1
                 {
                     WriteTheHelp();
                 }
-                else if (command == "add")
-                {
-                    AddFunction.addFunction();
-                }
                 else if (command == "load")
                 {
                     load.All();
@@ -41,6 +37,10 @@ namespace D19_ovn1._1
                 else if (command == "open")
                 {
                     open.OpenLink(command);
+                }
+                else if (command == "save")
+                {
+                    save.Me();
                 }
                 else
                 {

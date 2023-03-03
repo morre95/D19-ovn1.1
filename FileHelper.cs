@@ -7,12 +7,13 @@ namespace D19_ovn1._1
     {
         private static string _path = "linkList.list";
 
-        public static void Set(string[] contextArr)
+        public static void Set(string contextArr)
         {
-            using(StreamWriter sw = new StreamWriter(_path))
+            File.AppendAllText(_path, contextArr);
+            /*using(StreamWriter sw = new StreamWriter(_path, append: true))
             {
-                sw.WriteLine(string.Join("|", contextArr));
-            }
+                sw.WriteLine(string.Join("|", contextArr) + "\n");
+            }*/
         }
         public static string[] GetAll()
         {
