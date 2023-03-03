@@ -46,7 +46,6 @@ namespace D19_ovn1._1
                 else if (command == "select file")
                 {
                     FileHelper.SelectFile();
-                    //load.All();
                 }
                 else
                 {
