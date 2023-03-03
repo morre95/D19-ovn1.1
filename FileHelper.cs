@@ -18,6 +18,7 @@ namespace D19_ovn1._1
 
         public static string[] Get(string search)
         {
+            search = search.Trim();
             foreach (string line in GetAll())
             {
                 string[] parts = line.Split("|");

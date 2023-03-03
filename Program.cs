@@ -18,7 +18,7 @@ namespace D19_ovn1._1
             do
             {
                 Console.Write(": ");
-                command = Console.ReadLine().ToLower();
+                command = Console.ReadLine().ToLower().Trim();
                 if (command == "quit")
                 {
                     Console.WriteLine("Good bye!");
