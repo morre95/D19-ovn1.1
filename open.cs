@@ -10,7 +10,7 @@ namespace D19_ovn1._1
             Console.Write("Ange sida du vill besöka: ");
             string search = Console.ReadLine();
             string ret = null;
-            string[] lines = File.ReadAllLines(@"C:\Users\morri\source\repos\D19-ovn1.1\linkLinst.list");
+            string[] lines = FileHelper.GetAll();
             foreach (string line in lines)
             {
                 string[] test = line.Split("|");
